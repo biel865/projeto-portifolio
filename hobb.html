@@ -154,11 +154,17 @@ flex-direction: column;
         }
         button{
          margin: 10px;
-
+ border-bottom:1px solid #334155;
+  font-weight:bold;
+transition: transform 2s ease;
+    cursor:pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px red;
         }
         button :hover{
 transform: scale(1.2);
             background-color: red;
+            color: white;
         }
         @media screen {
             
@@ -277,7 +283,15 @@ transition: color 0.5s ease;}
 .dia.aberto .conteudo-dia{
     display:block;
 }
-
+ #insta:hover{
+             box-shadow: 0px 0px 0px 3px rgb(193, 53, 132);
+        }
+         #git:hover{
+             box-shadow: 0px 0px 0px 3px rgb(208, 215, 222);
+        }
+         #zap:hover{
+             box-shadow: 0px 0px 0px 3px rgb(52, 175, 35);
+        }
     </style>
 </head>
 <body>
@@ -323,7 +337,7 @@ transition: color 0.5s ease;}
                 </div>
 
                 <nav>
-                    <a href="#inicio">Início</a>
+                    <a href="index.html">Início</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#sobre">Sobre mim</a>
                     <a href="#contato">Contato</a>
@@ -334,6 +348,7 @@ transition: color 0.5s ease;}
 
             <div class="nome" id="inicio">
                 <div class="livros" id="livros">
+                      <h1 >meus livros favoritos</h1>
                     <div class="livro" >
                         <div class="frente" id="teste" onclick="contra(this)" >
   <img src="img/morro-uivante.jpg" alt="">
@@ -384,7 +399,7 @@ transition: color 0.5s ease;}
                         </div>
                       
                         <div class="atras" id="testee" >
-                        <img src="img/" alt="">
+                        <img src="img/contracapa-brascubas.jpg" alt="">
 
                         </div>
                     </div>
@@ -405,7 +420,7 @@ transition: color 0.5s ease;}
                         </div>
                       
                         <div class="atras" id="testee" >
-                        <img src="img/capa-noitesbranca.webp" alt="">
+                        <img src="img/contracapa-noites brancas.jpg" alt="">
 
                         </div>
                     </div>
@@ -439,13 +454,13 @@ transition: color 0.5s ease;}
                <div class="academia" id="academia">
 
     <h1>Minha Jornada na Academia</h1>
-    <p class="subtitulo">1 ano e 9 meses de treino • 63 kg • 1,60 m</p>
+  
 
     <div class="cards-info">
 
         <div class="info-card">
             <h3>💪 Tempo</h3>
-            <p>1 ano e 9 meses</p>
+            <p>2 ano</p>
         </div>
 
         <div class="info-card">
@@ -473,20 +488,6 @@ transition: color 0.5s ease;}
 
     <div class="conteudo-dia">
         <ul>
-            <li>Supino Reto:50kg</li>
-            <li>Supino Inclinado</li>
-            <li>Polia Alta</li>
-            <li>Tríceps Barra</li>
-            <li>Tríceps Testa</li>
-        </ul>
-    </div>
-</div>
-
-<div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Segunda • Peito + Tríceps</div>
-
-    <div class="conteudo-dia">
-        <ul>
             <li>Supino Reto</li>
             <li>Supino Inclinado</li>
             <li>Polia Alta</li>
@@ -497,35 +498,63 @@ transition: color 0.5s ease;}
 </div>
 
 <div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Segunda • Peito + Tríceps</div>
+    <div class="titulo-dia">Terça• Costas + BIcips + Abdomen</div>
 
     <div class="conteudo-dia">
         <ul>
-            <li>Supino Reto</li>
-            <li>Supino Inclinado</li>
-            <li>Polia Alta</li>
-            <li>Tríceps Barra</li>
-            <li>Tríceps Testa</li>
+            <li>Remada curvada</li>
+            <li>Remada articulada</li>
+            <li>Remada baixa</li>
+            <li>Bicips barra w</li>
+            <li>Bicips 45</li>
+            <li>Abdomen classico</li>
         </ul>
     </div>
 </div>
 
 <div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Segunda • Peito + Tríceps</div>
+    <div class="titulo-dia">quarta • perna </div>
 
     <div class="conteudo-dia">
         <ul>
-            <li>Supino Reto</li>
-            <li>Supino Inclinado</li>
-            <li>Polia Alta</li>
-            <li>Tríceps Barra</li>
-            <li>Tríceps Testa</li>
+            <li>Agachamento no hack</li>
+            <li>Leg press 45</li>
+            <li>Extensora</li>
+            <li>posterior</li>
+            <li>Cavalinho</li>
+        </ul>
+    </div>
+</div>
+
+<div class="dia" onclick="abrirTreino(this)">
+    <div class="titulo-dia">Quinta • Omrbo + Antebraço +Abdomen</div>
+
+    <div class="conteudo-dia">
+        <ul>
+            <li>Desenvolvimento</li>
+            <li>Elevaçao lateral</li>
+            <li>Elevaçao frontal</li>
+            <li>Crucifixo inverso</li>
+             <li>Trapezio</li>
+            <li>Elevaçao de punho</li>
+            <li>Abdomen supra</li>
+
         </ul>
     </div>
 </div>
   <div class="dia" onclick="abrirTreino(this)">
             <div class="titulo-dia">Sexta • Superior Completo</div>
-            <div class="conteudo-dia"><ul><li>Supino Inclinado</li><li>Paralela</li><li>Puxada Aberta</li><li>Rosca Scott</li></ul></div>
+            <div class="conteudo-dia"><ul><li>crucifixo</li><li>crucifixo iclinado</li><li>Paralela</li><li>tricips frances</li>
+            <li>Puxada aberta</li>
+            <li>Puxada triangulo</li>
+            <li>Rosca scoot</li>
+            <li>Rosca martelo</li>
+            
+            </ul>
+            
+            
+            
+            </div>
         </div>
 
     </div>
@@ -640,14 +669,15 @@ transition: color 0.5s ease;}
 
             <div class="contas" id="contato">
 
-                <nav>
+                 <nav>
 
-                    <a href="#" class="conta"></a>
-                    <a href="#" class="conta"></a>
-                    <a href="#" class="conta"></a>
-                    <a href="#" class="conta"></a>
+                    <a href="#" class="conta" id="insta" style="background: url(img/instragram.jpg) ;background-size: cover;"></a>
+                     <a href="#" class="conta" id="git" style="background: url(img/git.png) ;background-size: cover;"></a>
+                   <a href="#" class="conta" id="zap" style="background: url(img/zap.png) ;background-size: cover;"></a>
+                  
 
                 </nav>
+
 
             </div>
 
