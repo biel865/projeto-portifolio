@@ -20,16 +20,15 @@
         }
 main{
     display: flex;
-    height: 100vh;
-
+    min-height: 100vh;
 }
+
 .esquerdo{
     flex: 2;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     padding: 50px;
-
 }
 .barra{
     align-self: center;
@@ -295,7 +294,7 @@ transition: color 0.5s ease;}
         <h3>academia</h3>
     </button>
   </a>
-  <a href="">
+  <a href="#" onclick="fut(); return false;">
     <button>
         <h3>futbol</h3>
     </button>
@@ -546,6 +545,92 @@ transition: color 0.5s ease;}
 
 </div>
 
+ <div class="academia" id="fut" style="display: none;">
+
+
+    <div class="cards-info">
+
+        <div class="info-card">
+            <h3>meu time</h3>
+            <p>Clube atletico mineiro</p>
+        </div>
+
+        <div class="info-card">
+            <h3>time europeu</h3>
+            <p>Celsea</p>
+        </div>
+
+        <div class="info-card">
+            <img src="img/Troféu 1.jpg" height="200px" style="background-size: cover;" alt="">
+            <h3>trofeu futsal 2026</h3>
+            <p>maior assistente do campeonato</p>
+        </div>
+
+        <div class="info-card">
+                        <img src="img/Troféu 2.jpg" height="200px" style="background-size: cover;" alt="">
+
+            <h3>trofeu futsal 2026</h3>
+            <p>goleador do campeonato e hatrick na final</p>
+        </div>
+
+    </div>
+
+    <div class="treino-card">
+
+        <h2>Meus jogadores favoritos</h2>
+        <div class="dia" onclick="abrirTreino(this)">
+    <div class="titulo-dia">atletico</div>
+
+    <div class="conteudo-dia">
+        <ul>
+            <li>g.arana</li>
+            <li>hulk</li>
+            <li>zaracho</li>
+            <li>vitor</li>
+            <li>pavon</li>
+            <li>ronadinho gaucho</li>
+        </ul>
+    </div>
+</div>
+
+<div class="dia" onclick="abrirTreino(this)">
+    <div class="titulo-dia">seleçao</div>
+
+    <div class="conteudo-dia">
+        <ul>
+            <li>neymar</li>
+            <li>vini jr</li>
+            <li>casemiro</li>
+            <li>militao</li>
+            <li>ryan</li>
+        </ul>
+    </div>
+</div>
+
+<div class="dia" onclick="abrirTreino(this)">
+    <div class="titulo-dia">europeus</div>
+
+    <div class="conteudo-dia">
+        <ul>
+            <li>cristiano ronaldo</li>
+            <li>bale</li>
+            <li>modric</li>
+            <li>van dajk</li>
+            <li>yamal</li>
+        </ul>
+    </div>
+</div>
+
+
+  
+
+    </div>
+
+  
+
+</div>
+
+
         </section>
 
 
@@ -589,8 +674,20 @@ function contra(frente){
 function academia(){
     let livro=document.getElementById('livros')
     livro.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='none'
+    
     let academia=document.getElementById("academia")
     academia.style.display='flex'
+}
+function fut(){
+    let livro=document.getElementById('livros')
+    livro.style.display='none'
+    let academia=document.getElementById("academia")
+    academia.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='flex'
+    
 }
 function abrirTreino(dia){
     dia.classList.toggle("aberto");
