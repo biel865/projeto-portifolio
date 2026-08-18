@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@ main{
 .esquerdo{
     flex: 2;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     padding: 50px;
 
@@ -34,14 +34,12 @@ main{
 .barra{
     align-self: center;
     width: 220px;
-    
 }
  .ft {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
-          
         }
  .ft img {
             width: 110px;
@@ -56,7 +54,6 @@ main{
 .barra nav{
     display: flex;
     flex-direction: column;
-    
     gap: 15px;
     margin-top: 30px;
 }
@@ -145,72 +142,16 @@ flex-direction: column;
 
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
-        .hobb{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 40px;
-        }
-        button{
-         margin: 10px;
+        
 
-        }
-        button :hover{
-transform: scale(1.2);
-            background-color: red;
-        }
-        @media screen {
-            
-        }
-.livros{
-  
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-flow: row wrap;
-    gap: 40px;
-}
-
-.livros img{
-    height: 200px;
-    box-shadow: 1px 1px 1px white
-}
-.atras{
-    display: none;
-}
     </style>
 </head>
 <body>
-    <header>
-<div class="hobb">
-  <a href="">
-    <button >
-<h3>leitura</h3>
-    </button>
-  </a>
-
-  <a href="" onclick="li()">
-    <button>
-        <h3>academia</h3>
-    </button>
-  </a>
-  <a href="">
-    <button>
-        <h3>futbol</h3>
-    </button>
-  </a>
-  <a href="">
-    <button>
-        <h3>estudos</h3>
-    </button>
-  </a>
-</div>
-
-        
-    </header>
+    
 
       <main>
 
+        <!-- LADO ESQUERDO -->
 
         <section class="esquerdo">
 
@@ -218,7 +159,9 @@ transform: scale(1.2);
 
                 <div class="ft">
 
-                    <img src="img/g.jpg" alt="">
+                    <img src="img/g.jpg" alt="Foto de Gabriel">
+
+                    <h1>Gabriel</h1>
 
                 </div>
 
@@ -233,89 +176,27 @@ transform: scale(1.2);
 
 
             <div class="nome" id="inicio">
-                <div class="livros" id="livros">
-                    <div class="livro" >
-                        <div class="frente" id="teste" onclick="contra()" >
-  <img src="img/morro-uivante.jpg" alt="">
-                        </div>
-                      
-                        <div class="atras" id="testee" >
-                        <img src="img/contra-capa-morro.jpg" alt="">
 
-                        </div>
-                    </div>
+                <h1>Front-End Developer</h1>
 
-                    
+                <h2>
+                    Olá, eu sou Gabriel. Desenvolvedor focado
+                    em criar interfaces modernas, responsivas
+                    e funcionais para a web.
+                </h2>
 
-                     <div class="livro">
-                        <img src="img/capa-1984.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                     <div class="livro">
-                        <img src="img/capa-revoluçao dos bichos.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                     <div class="livro">
-                        <img src="img/capa-domcasmurro.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                     <div class="livro">
-                        <img src="img/capa-brascubas.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                     <div class="livro">
-                        <img src="img/capa-quincas borbas.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                     <div class="livro">
-                        <img src="img/capa-noitesbranca.webp" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                    <div class="livro">
-                        <img src="img/capa-inavlicth.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-                    <div class="livro">
-                        <img src="img/capa-toltoi.jpg" alt="">
-                        <div class="atras" onclick="giro()">
-                            
-                        </div>
-                    </div>
-
-                 
-
-
-                    
-                </div>
-
-              
+                <h2>
+                    Tenho conhecimento em HTML, CSS e JavaScript
+                    e estou constantemente desenvolvendo novos
+                    projetos para aprimorar minhas habilidades.
+                </h2>
 
             </div>
 
         </section>
 
 
-   
+        <!-- LADO DIREITO -->
 
         <section class="direito">
 
@@ -342,25 +223,6 @@ transform: scale(1.2);
         </section>
 
     </main>
-<script>
 
-function li(){
-    let li=document.getElementById("livros")
-    li.style.opacity='1'
-
-}
-function contra(){
-let costa=window.document.querySelectorAll('.atras');
-let frente=document.querySelectorall('.frente');
-frente.style.transform = "rotateY(-190deg)";
-setTimeout(() => {
-    frente.style.display='none',
-costa.style.display='block'
-
-}, 400);
-
-}
-
-</script>
 </body>
 </html>
