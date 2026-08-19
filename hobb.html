@@ -145,27 +145,34 @@ flex-direction: column;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
         }
         .hobb{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: -50px;
-                    margin: 20px;
-
-        }
-        button{
-         margin: 10px;
- border-bottom:1px solid #334155;
-  font-weight:bold;
-transition: transform 2s ease;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:20px;
+    background:#111827;
+    border-bottom:1px solid #334155;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}button{
+    background:transparent;
+    color:#cbd5e1;
+    border:2px solid #334155;
+    border-radius:999px;
+    padding:12px 24px;
     cursor:pointer;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px red;
-        }
-        button :hover{
-transform: scale(1.2);
-            background-color: red;
-            color: white;
-        }
+    font-size:15px;
+    font-weight:bold;
+    transition:all .3s ease;
+}
+button:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    border-color:#38bdf8;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(56,189,248,.35);
+}
         @media screen {
             
         }
@@ -420,7 +427,7 @@ transition: color 0.5s ease;}
                         </div>
                       
                         <div class="atras" id="testee" >
-                        <img src="img/contracapa-noites brancas.jpg" alt="">
+                        <img src="img/contracapa-noitesbrancas.jpg" alt="">
 
                         </div>
                     </div>
