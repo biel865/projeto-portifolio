@@ -302,11 +302,12 @@ transition: color 0.5s ease;}
         .galeria{
             display:none;flex-direction: column;
             gap: 15px;
+
             
         }
         .grade-fotos{
-            display:grid
-            ;grid-template-columns:repeat(2,1fr);
+            display:grid;
+grid-template-columns: repeat(2, 2fr);      
             gap:20px;
 
         }
@@ -316,14 +317,18 @@ transition: color 0.5s ease;}
             border-radius:18px;
             cursor:pointer;
             border:2px solid #334155;
-            transition:0.5s ease;}
+            transition:0.5s ease;
+        opacity: 0;
+    transform: translatex(200px);
+
+    }
 .foto-card:hover{border-color:#38bdf8;
     transform:translateY(-6px);
     box-shadow:0 15px 35px rgba(56,189,248,.25);}
 
 .foto-card img{
     width:100%;
-    height:250px;
+    height:350px;
     object-fit:cover;
     transition:.4s;}
  
@@ -339,28 +344,40 @@ transition: color 0.5s ease;}
 
     </style>
 </head>
-<body>
+<body onscroll="aparecer()">
     <header>
 <div class="hobb">
-  <a href="">
+      <a href="#" onclick="eu(); return false;">
     <button >
-<h3>leitura</h3>
+<h3>eu</h3>
     </button>
   </a>
 
   <a href="#" onclick="academia(); return false;">
     <button>
-        <h3>academia</h3>
+        <h3>amigos</h3>
     </button>
   </a>
   <a href="#" onclick="fut(); return false;">
     <button>
-        <h3>futbol</h3>
+        <h3>amigas</h3>
     </button>
   </a>
-  <a href="">
+    <a href="#" onclick="retiro(); return false;">
+
     <button>
-        <h3>estudos</h3>
+        <h3>retiro</h3>
+    </button>
+  </a>
+   <a href="#" onclick="pet(); return false;">
+    <button>
+        <h3>pet</h3>
+    </button>
+  </a>
+
+   <a href="#" onclick="irma(); return false;">
+    <button>
+        <h3>irma</h3>
     </button>
   </a>
 </div>
@@ -496,145 +513,135 @@ transition: color 0.5s ease;}
                     
                 </div>
 
-               <div class="academia" id="academia">
-
-    <h1>Minha Jornada na Academia</h1>
-  
-
-    <div class="cards-info">
-
-        <div class="info-card">
-            <h3>💪 Tempo</h3>
-            <p>2 ano</p>
-        </div>
-
-        <div class="info-card">
-            <h3>⚖️ Peso</h3>
-            <p>63 kg</p>
-        </div>
-
-        <div class="info-card">
-            <h3>📏 Altura</h3>
-            <p>1,60 m</p>
-        </div>
-
-        <div class="info-card">
-            <h3>🔥 Frequência</h3>
-            <p>5x por semana</p>
-        </div>
-
-    </div>
-
-    <div class="treino-card">
-
-        <h2>Minha divisão de treino</h2>
-        <div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Segunda • Peito + Tríceps</div>
-
-    <div class="conteudo-dia">
-        <ul>
-            <li>Supino Reto</li>
-            <li>Supino Inclinado</li>
-            <li>Polia Alta</li>
-            <li>Tríceps Barra</li>
-            <li>Tríceps Testa</li>
-        </ul>
-    </div>
-</div>
-
-<div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Terça• Costas + BIcips + Abdomen</div>
-
-    <div class="conteudo-dia">
-        <ul>
-            <li>Remada curvada</li>
-            <li>Remada articulada</li>
-            <li>Remada baixa</li>
-            <li>Bicips barra w</li>
-            <li>Bicips 45</li>
-            <li>Abdomen classico</li>
-        </ul>
-    </div>
-</div>
-
-<div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">quarta • perna </div>
-
-    <div class="conteudo-dia">
-        <ul>
-            <li>Agachamento no hack</li>
-            <li>Leg press 45</li>
-            <li>Extensora</li>
-            <li>posterior</li>
-            <li>Cavalinho</li>
-        </ul>
-    </div>
-</div>
-
-<div class="dia" onclick="abrirTreino(this)">
-    <div class="titulo-dia">Quinta • Omrbo + Antebraço +Abdomen</div>
-
-    <div class="conteudo-dia">
-        <ul>
-            <li>Desenvolvimento</li>
-            <li>Elevaçao lateral</li>
-            <li>Elevaçao frontal</li>
-            <li>Crucifixo inverso</li>
-             <li>Trapezio</li>
-            <li>Elevaçao de punho</li>
-            <li>Abdomen supra</li>
-
-        </ul>
-    </div>
-</div>
-  <div class="dia" onclick="abrirTreino(this)">
-            <div class="titulo-dia">Sexta • Superior Completo</div>
-            <div class="conteudo-dia"><ul><li>crucifixo</li><li>crucifixo iclinado</li><li>Paralela</li><li>tricips frances</li>
-            <li>Puxada aberta</li>
-            <li>Puxada triangulo</li>
-            <li>Rosca scoot</li>
-            <li>Rosca martelo</li>
-            
-            </ul>
-            
-            
-            
-            </div>
-        </div>
-
-    </div>
-
-    <div class="objetivos-card">
-
-        <h2>Objetivos</h2>
-
-        <ul>
-            <li>Ganhar mais massa muscular.</li>
-            <li>Aumentar a força.</li>
-            <li>Melhorar a execução dos exercícios.</li>
-            <li>Manter constância nos treinos.</li>
-        </ul>
-
-    </div>
-
-</div>
-
-
- 
-<div class="galeria" id="fut" >
+             <div class="galeria" id="academia" >
 <h1>Minha Galeria</h1>
-<p>Alguns momentos importantes da minha vida.</p>
+<p>amigos</p>
 <div class="grade-fotos">
-<div class="foto-card"><img src="img/Troféu 1.jpg"><span></span></div>
-<div class="foto-card"><img src="img/Troféu 2.jpg"><span></span></div>
-<div class="foto-card"><img src="img/eu.jpg"><span></span></div>
-<div class="foto-card"><img src="img/g.jpg"><span></span></div>
-<div class="foto-card"><img src="img/Troféu 1.jpg"><span></span></div>
-<div class="foto-card"><img src="img/Troféu 2.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigo1.jpg"><span>Bunitin</span></div>
+<div class="foto-card"><img src="img/Amigo2.jpg"><span>Bunitin</span></div>
+<div class="foto-card"><img src="img/Amigo3.jpg"><span>Miguel</span></div>
+<div class="foto-card"><img src="img/Amigo4.webp"><span>Miguel</span></div>
+<div class="foto-card"><img src="img/Amigo8.jpg"><span>Gustavo</span></div>
+<div class="foto-card"><img src="img/Amigo6.webp"><span>Gustavo</span></div>
+<div class="foto-card"><img src="img/Amigo5.webp"><span>João victor</span></div>
+<div class="foto-card"><img src="img/Amigo15.jpg"><span>João victor</span></div>
+<div class="foto-card"><img src="img/Amigo9.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigo13.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigo11.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigo12.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigo14.jpg"><span>miguel</span></div>
+<div class="foto-card"><img src="img/Amigo 10.jpeg"><span>miguel</span></div>
+
 </div>
 </div>
     
+ <div class="galeria" id="eu" >
+<h1>Minha Galeria</h1>
+<p></p>
+<div class="grade-fotos">
+<div class="foto-card"><img src="img/Eu13.webp"><span></span></div>
+<div class="foto-card"><img src="img/Eu4.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu1.jpeg"><span></span></div>
+<div class="foto-card"><img src="img/Eu6.jpeg"><span></span></div>
+<div class="foto-card"><img src="img/Eu7.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu9.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu10.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu14.jpeg"><span></span></div>
+<div class="foto-card"><img src="img/Eu11.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu12.jpeg"><span></span></div>
+<div class="foto-card"><img src="img/Eu5.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Eu2.png"><span></span></div>
 
+
+
+</div>
+</div>
+ 
+
+<div class="galeria" id="retiro" >
+<h1>Minha Galeria</h1>
+<p></p>
+<div class="grade-fotos">
+<div class="foto-card"><img src="img/Retiro12.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro10.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro9.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro14.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro2.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro1.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro15.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro13.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro3.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro7.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro4.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro5.jpg"><span></span></div>
+
+
+
+</div>
+</div>
+ 
+
+<div class="galeria" id="fut" >
+<h1>Minha Galeria</h1>
+<p>amigas</p>
+<div class="grade-fotos">
+<div class="foto-card"><img src="img/Amigas1.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigas3.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amiga10.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amigas 5.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Amiga11.jpg"><span>ju</span></div>
+<div class="foto-card"><img src="img/Amiga12.jpg"><span>ju</span></div>
+<div class="foto-card"><img src="img/Amiga9.jpg"><span>aninha</span></div>
+<div class="foto-card"><img src="img/Amigas8.jpg"><span>aninha</span></div>
+<div class="foto-card"><img src="img/Amigas 4.jpg"><span>ju</span></div>
+<div class="foto-card"><img src="img/Amigas 7.jpg"><span>ju</span></div>
+<div class="foto-card"><img src="img/Amigas 6.jpg"><span>ju</span></div>
+<div class="foto-card"><img src="img/Amigas2.jpg"><span>ju</span></div>
+
+
+</div>
+</div>
+    
+<div class="galeria" id="pet" >
+<h1>Minha Galeria</h1>
+<p></p>
+<div class="grade-fotos">
+<div class="foto-card"><img src="img/Pet1.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet2.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet3.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet4.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet5.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet5.webp"><span></span></div>
+<div class="foto-card"><img src="img/Retiro15.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro13.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro3.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro7.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro4.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro5.jpg"><span></span></div>
+
+
+
+</div>
+</div>
+ 
+<div class="galeria" id="irma" >
+<h1>Minha Galeria</h1>
+<p></p>
+<div class="grade-fotos">
+<div class="foto-card"><img src="img/Pet1.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet2.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet3.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet4.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet5.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Pet5.webp"><span></span></div>
+<div class="foto-card"><img src="img/Retiro15.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro13.jpg"><span></span></div>
+<div class="foto-card"><img src="img/Retiro3.jpg"><span></span></div>
+
+
+
+</div>
+</div>
 
  
 
@@ -663,7 +670,7 @@ transition: color 0.5s ease;}
 
             <div class="eu">
 
-                <img src="img/eu.jpg" alt="Gabriel">
+                <img src="img/Eu2.png" alt="Gabriel">
 
             </div>
 
@@ -685,7 +692,12 @@ function academia(){
     livro.style.display='none'
     let fut=document.getElementById("fut")
     fut.style.display='none'
-    
+     let eu=document.getElementById("eu")
+        eu.style.display='none'
+let retiro=document.getElementById("retiro")
+        retiro.style.display='none'
+ let pet=document.getElementById("pet")
+        pet.style.display='none'
     let academia=document.getElementById("academia")
     academia.style.display='flex'
 }
@@ -694,13 +706,101 @@ function fut(){
     livro.style.display='none'
     let academia=document.getElementById("academia")
     academia.style.display='none'
+     let eu=document.getElementById("eu")
+        eu.style.display='none'
+let retiro=document.getElementById("retiro")
+        retiro.style.display='none'
+         let pet=document.getElementById("pet")
+        pet.style.display='none'
     let fut=document.getElementById("fut")
     fut.style.display='flex'
     
 }
+function eu(){
+    let livro=document.getElementById('livros')
+    livro.style.display='none'
+    let academia=document.getElementById("academia")
+    academia.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='none'
+    let retiro=document.getElementById("retiro")
+        retiro.style.display='none'
+         let pet=document.getElementById("pet")
+        pet.style.display='none'
+    let eu=document.getElementById("eu")
+        eu.style.display='flex'  
+}
+
+function retiro(){
+    let livro=document.getElementById('livros')
+    livro.style.display='none'
+    let academia=document.getElementById("academia")
+    academia.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='none'
+    let eu=document.getElementById("eu")
+        eu.style.display='none'  
+        let pet=document.getElementById("pet")
+        pet.style.display='none'
+        let retiro=document.getElementById("retiro")
+        retiro.style.display='flex'
+}
+
+function pet(){
+    let livro=document.getElementById('livros')
+    livro.style.display='none'
+    let academia=document.getElementById("academia")
+    academia.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='none'
+    let eu=document.getElementById("eu")
+        eu.style.display='none'  
+        let retiro=document.getElementById("retiro")
+        retiro.style.display='none'
+        let pet=document.getElementById("pet")
+        pet.style.display='flex'
+}
+
+function irma(){
+    let livro=document.getElementById('livros')
+    livro.style.display='none'
+    let academia=document.getElementById("academia")
+    academia.style.display='none'
+    let fut=document.getElementById("fut")
+    fut.style.display='none'
+    let eu=document.getElementById("eu")
+        eu.style.display='none'  
+        let retiro=document.getElementById("retiro")
+        retiro.style.display='none'
+        let pet=document.getElementById("pet")
+        pet.style.display='none'
+        let irma=document.getElementById("irma")
+        irma.style.display='flex'
+}
+
+
 function abrirTreino(dia){
     dia.classList.toggle("aberto");
 }
+function aparecer(){
+    let card= document.querySelectorAll(".foto-card")
+    card.forEach(function(item){
+        let pose = item.getBoundingClientRect().top
+let altura= window.innerHeight
+if(pose< altura-100){
+    item.style.opacity="1"
+    item.style.transform = "translateY(0px)"
+
+
+}
+
+
+    }
+
+    )
+
+}
+
 </script>
 </body>
 </html>
